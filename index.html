@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Em busca da cidade perdida</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>A Jornada pela Cidade Perdida</h1>
+            <p>Embarque nesta aventura cheia de mistérios e escolhas decisivas!</p>
+        </header>
+
+        <!-- Passo 0: Introdução -->
+        <section class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.png" alt="Cenário inicial">
+            <p>Em uma tarde chuvosa, você encontra, em um velho livro da biblioteca da escola, uma carta misteriosa escrita por um explorador. Nela, há menções de uma cidade perdida, onde tesouros inimagináveis e segredos ancestrais aguardam por aqueles corajosos o suficiente para encontrá-la.</p>
+            <p>O mapa que acompanha a carta mostra algumas localizações desconhecidas. Sem pensar duas vezes, você decide partir em busca dessa cidade. Mas a jornada não será fácil.</p>
+            <button class="btn-proximo" data-proximo="1">Começar a jornada no Rio de Janeiro</button>
+            <button class="btn-proximo" data-proximo="2">Seguir para o sertão do Pernambuco</button>
+        </section>
+
+        <!-- Passo 1: Rio de Janeiro -->
+        <section class="passo" id="passo-1">
+            <p>Você chega ao Rio de Janeiro, onde a primeira pista está escondida. A carta menciona um antigo símbolo no Pico da Tijuca, visível apenas ao amanhecer.</p>
+            <p>Ao subir a montanha, você se depara com uma encruzilhada. Uma trilha leva a um topo isolado, enquanto outra segue em direção a uma caverna desconhecida na base do pico.</p>
+            <button class="btn-proximo" data-proximo="3">Subir ao topo e buscar o símbolo</button>
+            <button class="btn-proximo" data-proximo="4">Explorar a caverna misteriosa</button>
+        </section>
+
+        <!-- Passo 2: Pernambuco -->
+        <section class="passo" id="passo-2">
+            <p>Em Pernambuco, você chega a Olinda, uma cidade histórica cheia de encantos e enigmas. A carta menciona um templo perdido que contém uma pista sobre a localização da cidade perdida.</p>
+            <p>Há dois locais principais para investigar: as igrejas antigas de Olinda, repletas de arte e história, ou as praias selvagens onde algumas lendas falam de um mapa enterrado.</p>
+            <button class="btn-proximo" data-proximo="5">Investigar as igrejas antigas</button>
+            <button class="btn-proximo" data-proximo="6">Explorar as praias e cavernas escondidas</button>
+        </section>
+
+        <!-- Passo 3: Rio de Janeiro - Pico da Tijuca -->
+        <section class="passo" id="passo-3">
+            <p>Ao alcançar o topo do Pico da Tijuca, você encontra um antigo artefato que descreve em detalhes a cidade perdida. A pista leva você ao Amazonas, onde o verdadeiro desafio começa.</p>
+            <button class="btn-proximo" data-proximo="7">Seguir para o Amazonas e desvendar o mistério</button>
+        </section>
+
+        <!-- Passo 4: Caverna no Pico da Tijuca -->
+        <section class="passo" id="passo-4">
+            <p>Dentro da caverna, você encontra inscrições que apontam para o Amazonas, mas o ambiente começa a ficar perigoso. As pedras caem e o eco de passos pode ser ouvido à distância...</p>
+            <button class="btn-proximo" data-proximo="7">Escapar e seguir para o Amazonas</button>
+        </section>
+
+        <!-- Passo 5: Igrejas de Olinda -->
+        <section class="passo" id="passo-5">
+            <p>Nas igrejas de Olinda, você encontra uma parede secreta atrás de um altar. Ao quebrar a parede, um mapa detalhado revela a localização de um rio secreto no Amazonas, a chave para acessar a cidade perdida.</p>
+            <button class="btn-proximo" data-proximo="7">Viajar para o Amazonas</button>
+        </section>
+
+        <!-- Passo 6: Praias de Olinda -->
+        <section class="passo" id="passo-6">
+            <p>Explorando as praias, você encontra uma caverna submersa, mas logo percebe que é um beco sem saída. Sem pistas, você decide retornar.</p>
+            <button class="btn-proximo" data-proximo="5">Voltar e investigar as igrejas</button>
+        </section>
+
+        <!-- Passo 7: Amazonas - O rio -->
+        <section class="passo" id="passo-7">
+            <p>No Amazonas, você encontra um rio bifurcado, e a carta fala sobre uma bifurcação decisiva que levará você à cidade perdida. A escolha é sua: um rio parece mais calmo, o outro parece mais misterioso e tortuoso.</p>
+            <button class="btn-proximo" data-proximo="8">Seguir o rio calmo e seguro</button>
+            <button class="btn-proximo" data-proximo="9">Explorar o rio misterioso</button>
+        </section>
+
+        <!-- Passo 8: Rio Calmo -->
+        <section class="passo" id="passo-8">
+            <p>O rio calmo leva a uma cachoeira com inscrições antigas. Após decifrar o texto, você encontra a entrada secreta para a cidade perdida!</p>
+            <button class="btn-proximo" data-proximo="10">Explorar a cidade perdida</button>
+        </section>
+
+        <!-- Passo 9: Rio Misterioso -->
+        <section class="passo" id="passo-9">
+            <p>O rio misterioso te leva a uma área pantanosa. A beleza é arrebatadora, mas sem pistas adicionais, você retorna e tenta o outro rio.</p>
+            <button class="btn-proximo" data-proximo="8">Voltar e seguir o rio calmo</button>
+        </section>
+
+        <!-- Passo 10: A cidade perdida -->
+        <section class="passo" id="passo-10">
+            <img src="img/cenario-passo11-cidade-perdida.png" alt="Cidade Perdida">
+            <p>Você finalmente encontra a cidade perdida! Ela é ainda mais majestosa e misteriosa do que você imaginava. Tesouros escondidos e conhecimentos antigos aguardam por você.</p>
+            <p>Parabéns, você completou sua jornada e desvendou o segredo da cidade perdida!</p>
+        </section>
+
+        <footer>
+            <p>Feito com ❤️ por [Seu Nome].</p>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

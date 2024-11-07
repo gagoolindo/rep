@@ -1,0 +1,127 @@
+/* Estilo Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1D4221; /* Cor de fundo verde escuro */
+    color: white;
+    font-family: "Bai Jamjuree", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Preenche a tela inteira */
+    margin: 0;
+    flex-direction: column; /* Centraliza o conteúdo verticalmente */
+    text-align: center; /* Centraliza o texto */
+    background: linear-gradient(135deg, #1D4221, #4CAF50); /* Gradiente para um efeito visual mais interessante */
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Passos (cenários) */
+.passo {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Animação de transição suave */
+}
+
+.passo.ativo {
+    display: block;
+    opacity: 1;
+}
+
+/* Imagens */
+img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px; /* Adiciona bordas arredondadas às imagens */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra sutil para dar destaque */
+    margin-top: 20px;
+}
+
+/* Botões */
+button {
+    background-color: #64A712; /* Cor de fundo verde do botão */
+    color: white;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px; /* Bordas arredondadas para o botão */
+    margin: 20px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Efeito de transição ao passar o mouse */
+}
+
+button:hover {
+    background-color: #4CAF50; /* Muda a cor do botão quando o mouse passa por cima */
+    transform: scale(1.05); /* Aumenta o tamanho do botão suavemente */
+}
+
+button:active {
+    transform: scale(1); /* Retorna ao tamanho original quando clicado */
+}
+
+/* Estilo para o Cabeçalho */
+header {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Efeito de sombra para o título */
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+/* Estilo para o rodapé */
+footer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    main {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+}
